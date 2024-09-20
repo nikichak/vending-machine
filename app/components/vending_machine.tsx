@@ -17,7 +17,6 @@ const VendingMachine: React.FC = () => {
 
   if (!data?.products) return
 
-  // TODO add spinner when the data is not loaded
   return (
     <>
       <Header type={productType} setType={setProductType} />
