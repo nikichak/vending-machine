@@ -1,10 +1,11 @@
 import { Products } from '@/app/lib/product'
 import { ProductType } from '@/app/lib/product_types'
-import { NextApiRequest } from 'next'
 import { NextResponse } from 'next/server'
 
-export async function GET(req: NextApiRequest) {
-  const type = req.query?.type
+export async function GET(req: Request) {
+  const { searchParams } = new URL(req.url)
+
+  const type = searchParams.get('type')
 
   let products = Products
 

@@ -7,7 +7,7 @@ export enum ProductType {
   DRINKY = 'DRINKY'
 }
 
-export const ProductTypeDefinition: { [key in ProductType]: { label: string; icon: any } } = {
+export const ProductTypeDefinition: { [key in ProductType]: { label: string; icon: React.ReactElement } } = {
   [ProductType.ALL]: {
     label: 'All',
     icon: <RestaurantMenu />

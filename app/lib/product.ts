@@ -6,7 +6,6 @@ export interface Product {
   quantity: number
   price: number
   isAvailable: boolean
-  icon: any
 }
 
 export const Products: Product[] = [
@@ -15,7 +14,6 @@ export const Products: Product[] = [
     type: ProductType.SWEETY,
     quantity: 15,
     isAvailable: true,
-    icon: '',
     price: 1.5
   },
   {
@@ -23,7 +21,6 @@ export const Products: Product[] = [
     type: ProductType.SWEETY,
     quantity: 7,
     isAvailable: true,
-    icon: '',
     price: 2.2
   },
   {
@@ -31,7 +28,6 @@ export const Products: Product[] = [
     type: ProductType.SWEETY,
     quantity: 3,
     isAvailable: true,
-    icon: '',
     price: 0.5
   },
   {
@@ -39,7 +35,6 @@ export const Products: Product[] = [
     type: ProductType.SALTY,
     quantity: 8,
     isAvailable: true,
-    icon: '',
     price: 5.5
   },
   {
@@ -47,7 +42,6 @@ export const Products: Product[] = [
     type: ProductType.SALTY,
     quantity: 15,
     isAvailable: true,
-    icon: '',
     price: 4
   },
   {
@@ -55,7 +49,6 @@ export const Products: Product[] = [
     type: ProductType.SALTY,
     quantity: 10,
     isAvailable: true,
-    icon: '',
     price: 3.5
   },
   {
@@ -63,9 +56,8 @@ export const Products: Product[] = [
     type: ProductType.DRINKY,
     quantity: 15,
     isAvailable: true,
-    icon: '',
     price: 2
   },
-  { label: 'Sprite', type: ProductType.DRINKY, quantity: 2, isAvailable: true, icon: '', price: 2 },
-  { label: 'Water', type: ProductType.DRINKY, quantity: 6, isAvailable: true, icon: '', price: 0.9 }
+  { label: 'Sprite', type: ProductType.DRINKY, quantity: 2, isAvailable: true, price: 2 },
+  { label: 'Water', type: ProductType.DRINKY, quantity: 6, isAvailable: true, price: 0.9 }
 ]

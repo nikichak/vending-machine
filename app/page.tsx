@@ -1,5 +1,8 @@
 import VendingMachine from './components/vending_machine'
+import { fetchProducts } from './lib/api'
 
-export const VendingMachineLandingPage: React.FC = () => <VendingMachine />
+export default async function VendingMachineLandingPage() {
+  const products = await fetchProducts()
 
-export default VendingMachineLandingPage
+  return <VendingMachine initialProducts={products} />
+}
