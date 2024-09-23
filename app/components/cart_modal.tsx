@@ -53,7 +53,15 @@ const CartModal: React.FC<CartModalProps> = ({ open, handleClose }) => {
 
   return (
     <Modal open={open} onClose={handleClose}>
-      <Box sx={{ bgcolor: 'background.paper', padding: 4, width: 400, margin: 'auto', mt: '15vh' }}>
+      <Box
+        sx={{
+          bgcolor: 'background.paper',
+          padding: 4,
+          width: { xs: '100vw', md: 400 },
+          margin: 'auto',
+          mt: '15vh'
+        }}
+      >
         <Typography variant="h6" component="h2">
           Shopping Cart
         </Typography>
