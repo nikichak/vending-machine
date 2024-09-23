@@ -29,7 +29,6 @@ const ProductCard: React.FC<Props> = ({ product }) => {
   }
 
   const handleAddToCart = () =>{
-    console.log('TUKAAA CARD')
     dispatch(
       addToShoppingCart({
         label,

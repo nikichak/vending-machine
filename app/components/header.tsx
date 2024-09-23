@@ -21,7 +21,7 @@ import { grey } from '@mui/material/colors'
 import { useSelector } from 'react-redux'
 import { RootState } from '../lib/redux/store'
 import { AddCircle } from '@mui/icons-material'
-import Credit from './credit'
+import Credit from './credit_modal'
 
 interface Props {
   type: ProductType
